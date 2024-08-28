@@ -69,10 +69,10 @@
 
         settings_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &none     &trans  &trans  &trans    &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &none     &trans  &none   &none   &none   &trans  &trans
+&trans  &none   &none   &none   &none   &none     &trans  &none   &none   &none   &trans  &trans
 &trans  &none   &none   &none   &none   &none     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &none   &none   &none   &none     &trans  &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans          &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -86,5 +86,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        config_activation {
+            if-layers = <1 2>;
+            then-layer = <5>;
+        };
+    };
 };
