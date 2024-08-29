@@ -24,13 +24,6 @@
         };
     };
 
-    aliases {
-        U_LBKT = <&u U005B>;  // Unicode left bracket
-        U_RBKT = <&u U005D>;  // Unicode right bracket
-        U_LBRC = <&u U007B>;  // Unicode left curly brace
-        U_RBRC = <&u U007D>;  // Unicode right curly brace
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -55,8 +48,8 @@
         raise_layer {
             bindings = <
 &none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &none
-&none  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &LBKT_MACRO           &RBKT_MACRO            &kp BSLH      &none
-&none  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &LBRC_MACRO           &RBRC_MACRO            &kp PIPE      &none
+&none  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH      &none
+&none  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE      &none
                          &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
