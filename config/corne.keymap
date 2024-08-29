@@ -24,34 +24,11 @@
         };
     };
 
-    behaviors {
-        LBKT_MACRO: LBKT_MACRO {
-            compatible = "zmk,behavior-macro";
-            label = "Left Bracket Macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET>;
-        };
-
-        RBKT_MACRO: RBKT_MACRO {
-            compatible = "zmk,behavior-macro";
-            label = "Right Bracket Macro";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET>;
-        };
-
-        LBRC_MACRO: LBRC_MACRO {
-            compatible = "zmk,behavior-macro";
-            label = "Left Curly Brace Macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE>;
-        };
-
-        RBRC_MACRO: RBRC_MACRO {
-            compatible = "zmk,behavior-macro";
-            label = "Right Curly Brace Macro";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACE>;
-        };
+    aliases {
+        U_LBKT = &u U005B;  // Unicode left bracket
+        U_RBKT = &u U005D;  // Unicode right bracket
+        U_LBRC = &u U007B;  // Unicode left curly brace
+        U_RBRC = &u U007D;  // Unicode right curly brace
     };
 
     keymap {
