@@ -20,6 +20,12 @@
         lang-switch {
             bindings = <&kp LG(SPACE)>;
             key-positions = <36 38 32 30>;
+            layers = <0>;
+        };
+
+        config-layer {
+            bindings = <&mo 5>;
+            key-positions = <31 30 34 35>;
         };
     };
 
@@ -46,10 +52,10 @@
 
         raise_layer {
             bindings = <
-  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK
-  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH
-  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE
-                    &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+  &kp EXCL        &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK
+  &kp LEFT_SHIFT  &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH
+  &kp LCTRL       &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE
+                          &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
@@ -81,12 +87,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        config_activation {
-            if-layers = <1 2 4 3>;
-            then-layer = <5>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
