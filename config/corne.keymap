@@ -34,55 +34,55 @@
 
         default_layer {
             bindings = <
-  &kp Q         &kp W        &kp E  &kp R  &kp T                 &kp Y    &kp U  &kp I      &kp O    &kp P
-  &mt LSHIFT A  &mt LS(S) S  &kp D  &kp F  &kp G                 &kp H    &kp J  &kp K      &kp L    &mt LEFT_SHIFT SLASH
-  &mt LCTRL Z   &kp X        &kp C  &kp V  &kp B                 &kp N    &kp M  &kp COMMA  &kp DOT  &kp SEMI
-                             &mo 3  &mo 1  &mt LEFT_ALT SPACE    &kp RET  &mo 2  &mo 4
+  &kp Q         &kp W  &kp E  &kp R  &kp T                 &kp Y    &kp U  &kp I      &kp O    &kp P
+  &mt LSHIFT A  &kp S  &kp D  &kp F  &kp G                 &kp H    &kp J  &kp K      &kp L    &mt LEFT_SHIFT SLASH
+  &mt LCTRL Z   &kp X  &kp C  &kp V  &kp B                 &kp N    &kp M  &kp COMMA  &kp DOT  &kp SEMI
+                       &mo 3  &mo 1  &mt LEFT_ALT SPACE    &kp RET  &mo 2  &mo 4
             >;
         };
 
         lower_layer {
             bindings = <
-  &kp TAB         &none   &none             &none   &none        &none     &kp DELETE      &kp UP_ARROW  &kp BACKSPACE  &none
-  &kp LEFT_SHIFT  &none   &none             &none   &none        &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
-  &kp LCTRL       &trans  &trans            &trans  &none        &trans    &kp PAGE_UP     &trans        &kp PAGE_DOWN  &trans
-                          &kp LS(LEFT_ALT)  &trans  &kp SPACE    &kp RET   &trans          &kp RALT
+  &kp TAB         &none  &none         &none  &none        &none     &kp DELETE      &kp UP_ARROW  &kp BACKSPACE  &none
+  &kp LEFT_SHIFT  &none  &none         &none  &none        &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
+  &kp LCTRL       &none  &none         &none  &none        &none     &kp PAGE_UP     &none         &kp PAGE_DOWN  &none
+                         &kp LEFT_GUI  &none  &kp SPACE    &kp RET   &none           &none
             >;
         };
 
         raise_layer {
             bindings = <
-  &kp EXCL        &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK
-  &kp LEFT_SHIFT  &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH
-  &kp LCTRL       &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE
-                          &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+  &kp EXCL        &kp AT           &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK
+  &kp LEFT_SHIFT  &kp NON_US_HASH  &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH
+  &kp LCTRL       &none            &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE
+                                   &kp LGUI  &none     &kp SPACE    &kp RET    &none      &kp RALT
             >;
         };
 
         system_layer {
             bindings = <
-  &kp ESCAPE    &kp F7  &kp F8  &kp F9  &kp F10    &kp C_VOLUME_UP    &kp N7  &kp N8  &kp N9  &kp C_BRI_UP
-  &kp TAB       &kp F4  &kp F5  &kp F6  &kp F11    &kp C_VOLUME_DOWN  &kp N4  &kp N5  &kp N6  &kp C_BRIGHTNESS_DEC
-  &kp CAPSLOCK  &kp F1  &kp F2  &kp F3  &kp F12    &kp N0             &kp N1  &kp N2  &kp N3  &trans
-                        &trans  &trans  &trans     &trans             &trans  &trans
+  &kp ESCAPE    &kp F1  &kp F2    &kp F3   &kp F4       &kp C_VOLUME_UP    &kp N7  &kp N8  &kp N9  &kp C_BRI_UP
+  &kp TAB       &kp F5  &kp F6    &kp F7   &kp F8       &kp C_VOLUME_DOWN  &kp N4  &kp N5  &kp N6  &kp C_BRIGHTNESS_DEC
+  &kp CAPSLOCK  &kp F9  &kp F10   &kp F11  &kp F12      &kp N0             &kp N1  &kp N2  &kp N3  &none
+                        &kp LGUI  &none    &kp SPACE    &kp ENTER          &none   &none
             >;
         };
 
         settings_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &none     &trans  &none   &none   &none   &trans
-  &none   &none   &none   &none   &none     &trans  &none   &none   &none   &trans
-  &none   &none   &none   &none   &none     &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans  &trans
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+                &none  &none  &none    &none  &none  &none
             >;
         };
 
         config_layer {
             bindings = <
-  &trans      &trans        &trans        &trans        &out OUT_BLE    &trans  &trans  &trans  &trans  &trans
-  &none       &bt BT_SEL 3  &bt BT_SEL 4  &none         &out OUT_USB    &trans  &trans  &trans  &trans  &trans
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_TOG    &trans  &trans  &trans  &trans  &trans
-                            &trans        &trans        &trans          &trans  &trans  &trans
+  &none       &none         &none         &none         &out OUT_BLE    &none  &none  &none  &none  &none
+  &none       &bt BT_SEL 3  &bt BT_SEL 4  &none         &out OUT_USB    &none  &none  &none  &none  &none
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_TOG    &none  &none  &none  &none  &none
+                            &none         &none         &none           &none  &none  &none
             >;
         };
     };
