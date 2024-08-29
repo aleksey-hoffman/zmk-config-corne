@@ -25,10 +25,10 @@
     };
 
     aliases {
-        U_LBKT = &u U005B;  // Unicode left bracket
-        U_RBKT = &u U005D;  // Unicode right bracket
-        U_LBRC = &u U007B;  // Unicode left curly brace
-        U_RBRC = &u U007D;  // Unicode right curly brace
+        U_LBKT = <&u U005B>;  // Unicode left bracket
+        U_RBKT = <&u U005D>;  // Unicode right bracket
+        U_LBRC = <&u U007B>;  // Unicode left curly brace
+        U_RBRC = <&u U007D>;  // Unicode right curly brace
     };
 
     keymap {
