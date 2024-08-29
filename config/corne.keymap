@@ -19,12 +19,7 @@
 
         lang-switch {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <36 38>;
-        };
-
-        highlight-end {
-            bindings = <&kp LS(END)>;
-            key-positions = <18 21>;
+            key-positions = <36 38 32 30>;
         };
     };
 
@@ -33,10 +28,10 @@
 
         default_layer {
             bindings = <
-  &kp Q         &kp W  &kp E  &kp R  &kp T                 &kp Y    &kp U  &kp I      &kp O    &kp P
-  &mt LSHIFT A  &kp S  &kp D  &kp F  &kp G                 &kp H    &kp J  &kp K      &kp L    &mt LEFT_SHIFT SLASH
-  &mt LCTRL Z   &kp X  &kp C  &kp V  &kp B                 &kp N    &kp M  &kp COMMA  &kp DOT  &kp SEMI
-                       &mo 3  &mo 1  &mt LEFT_ALT SPACE    &kp RET  &mo 2  &mo 4
+  &kp Q         &kp W        &kp E  &kp R  &kp T                 &kp Y    &kp U  &kp I      &kp O    &kp P
+  &mt LSHIFT A  &mt LS(S) S  &kp D  &kp F  &kp G                 &kp H    &kp J  &kp K      &kp L    &mt LEFT_SHIFT SLASH
+  &mt LCTRL Z   &kp X        &kp C  &kp V  &kp B                 &kp N    &kp M  &kp COMMA  &kp DOT  &kp SEMI
+                             &mo 3  &mo 1  &mt LEFT_ALT SPACE    &kp RET  &mo 2  &mo 4
             >;
         };
 
@@ -90,7 +85,7 @@
         compatible = "zmk,conditional-layers";
 
         config_activation {
-            if-layers = <1 2>;
+            if-layers = <1 2 4 3>;
             then-layer = <5>;
         };
     };
