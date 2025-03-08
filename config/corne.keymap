@@ -19,7 +19,7 @@
 
         lang-switch {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <30 34>;
+            key-positions = <31 32>;
             layers = <0>;
             timeout-ms = <50>;
         };
