@@ -14,27 +14,24 @@
 };
 
 / {
-    behaviors {
-        quick_mo: quick_momentary_layer {
-            compatible = "zmk,behavior-momentary-layer";
-            label = "QUICK_MOMENTARY_LAYER";
-            #binding-cells = <1>;
-            quick-release;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
         lang-switch {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <36 38 32 30>;
+            key-positions = <36 38>;
             layers = <0>;
         };
 
         config-layer {
             bindings = <&mo 4>;
             key-positions = <31 30 34 35>;
+        };
+
+        comma-dot-semi {
+            bindings = <&kp SEMI>;
+            key-positions = <37 38>;
+            layers = <0>;
         };
     };
 
