@@ -19,7 +19,7 @@
 
         lang-switch {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <36 38>;
+            key-positions = <36 38 32 31>;
             layers = <0>;
         };
 
@@ -30,7 +30,7 @@
 
         comma-dot-semi {
             bindings = <&kp SEMI>;
-            key-positions = <37 38>;
+            key-positions = <37 38 27 28>;
             layers = <0>;
         };
     };
