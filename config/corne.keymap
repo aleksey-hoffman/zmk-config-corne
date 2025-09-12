@@ -43,9 +43,23 @@
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>,
-                       <&macro_tap &kp KP_N0 &kp KP_N6 &kp KP_N4>,
-                       <&macro_release &kp LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N6 &kp KP_N4>,
+                <&macro_release>,
+                <&kp LALT>;
+        };
+    };
+
+    behaviors {
+        send_string_at_sign: send_string_at_sign {
+            compatible = "zmk,behavior-send-string";
+            label = "SEND_STRING_AT_SIGN";
+            #binding-cells = <0>;
+            text = "@";
+            charmap = @;
         };
     };
 
@@ -72,10 +86,10 @@
 
         symbol_layer {
             bindings = <
-  &kp EXCL        &at_alt_code &kp HASH         &kp DLLR    &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-  &kp LEFT_SHIFT  &kp STAR     &kp NON_US_HASH  &none       &none        &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp SINGLE_QUOTE
-  &kp LCTRL       &at_alt_code &none            &kp DOLLAR  &none        &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp SLASH
-                               &kp LGUI         &none       &kp SPACE    &kp RET    &none      &kp RALT
+  &kp EXCL        &send_string_at_sign  &kp HASH         &kp DLLR    &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+  &kp LEFT_SHIFT  &kp STAR              &kp NON_US_HASH  &none       &none        &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp SINGLE_QUOTE
+  &kp LCTRL       &at_alt_code          &none            &kp DOLLAR  &none        &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp SLASH
+                                        &kp LGUI         &none       &kp SPACE    &kp RET    &none      &kp RALT
             >;
         };
 
