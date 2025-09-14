@@ -58,28 +58,28 @@
 
         default_layer {
             bindings = <
-  &mt ESCAPE Q  &kp W  &kp E         &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P
-  &mt LSHIFT A  &kp S  &kp D         &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &mt LEFT_SHIFT SLASH
-  &mt LCTRL Z   &kp X  &kp C         &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &mt LCTRL COLON
-                       &kp LEFT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 2  &mo 3
-            >;
-        };
-
-        control_layer {
-            bindings = <
-  &kp TAB         &none  &none         &none  &none        &none     &kp DELETE      &kp UP_ARROW  &kp BACKSPACE  &none
-  &kp LEFT_SHIFT  &none  &kp B         &none  &none        &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
-  &kp LCTRL       &none  &none         &none  &none        &none     &kp PAGE_UP     &none         &kp PAGE_DOWN  &none
-                         &kp LEFT_GUI  &none  &kp SPACE    &kp RET   &none           &none
+  &mt CAPSLOCK Q  &kp W  &kp E         &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P
+  &mt LSHIFT A    &kp S  &kp D         &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &mt LEFT_SHIFT SLASH
+  &mt LCTRL Z     &kp X  &kp C         &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &mt LCTRL COLON
+                         &kp LEFT_ALT  &mo 3  &kp SPACE    &kp RET  &mo 1  &mo 3
             >;
         };
 
         symbol_layer {
             bindings = <
-  &kp GRAVE       &kp EXCLAMATION  &none            &kp DLLR    &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-  &kp LEFT_SHIFT  &kp STAR         &kp NON_US_HASH  &none       &none        &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp SINGLE_QUOTE
-  &kp LCTRL       &at_alt_code     &none            &kp DOLLAR  &none        &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp SLASH
-                                   &kp LGUI         &none       &kp SPACE    &kp RET    &none      &kp RALT
+  &kp GRAVE       &kp EXCLAMATION  &at_alt_code     &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+  &kp LEFT_SHIFT  &kp STAR         &kp NON_US_HASH  &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp SINGLE_QUOTE
+  &kp LCTRL       &none            &none            &none     &none        &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp SLASH
+                                   &kp LGUI         &none     &kp SPACE    &kp RET    &none      &kp RALT
+            >;
+        };
+
+        control_layer {
+            bindings = <
+  &mt TAB ESCAPE  &kp N1  &kp N2        &kp N3    &none        &none     &kp DELETE      &kp UP_ARROW  &kp BACKSPACE  &none
+  &kp LEFT_SHIFT  &kp N4  &kp N5        &kp N6    &none        &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
+  &kp LCTRL       &kp N7  &kp N8        &kp N9    &kp N0       &none     &kp PAGE_UP     &none         &kp PAGE_DOWN  &none
+                          &kp LEFT_GUI  &kp LALT  &kp SPACE    &kp RET   &none           &none
             >;
         };
 
